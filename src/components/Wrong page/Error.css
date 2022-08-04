@@ -1,0 +1,64 @@
+.Logintop{
+    height: 5rem;
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+ .Logintopimg{
+    width: 200px;
+ }
+ .Logintoptext{
+    color: gray;
+    font-size: large;
+    margin-top:1rem;
+
+ }
+  .Errorcontent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+  
+     
+  }
+  .Errorcontentheading{
+    flex:0.5;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Texthead{
+    font-size: 50px;
+    align-self: flex-start;
+    margin-bottom:4rem ;
+  }
+  .Texthead1{
+
+  }
+  .Errorcontentimg{
+    flex: 0.5;
+    max-width:700px;
+  }
+  .buttong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btns>.MuiButton-root{
+    color: #012169; 
+    padding: 0.5rem;
+    width: 10rem;
+    margin-left:2rem ;
+  }
+  .flexx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+  }
+  .flexx>.MuiIconButton-root{
+    color: #012169;
+    margin-left:1rem ;
+  }

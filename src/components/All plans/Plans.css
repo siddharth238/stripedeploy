@@ -1,0 +1,311 @@
+:root {
+    --b-red: #003087;
+    --light-red: #73A5C6;
+    --grey: #737373;
+    --d-grey: #333333;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "Netflix Sans";
+    font-weight: 700;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Netflix Sans";
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Netflix Sans";
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2");
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Netflix Sans";
+  }
+  svg.svg-icon.svg-icon-netflix-logo {
+    height: 45px;
+    width: 165px;
+  }
+  nav.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px solid #e6e6e6;
+    padding: 15px 2.5%;
+  }
+  span.check {
+    color: #009cde;
+    font-weight: 700;
+  }
+  ul.fts {
+    list-style: none;
+    padding-left: 0;
+  }
+  div.ft {
+    padding: 0 16px;
+    margin-top: 1.99em;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #333;
+  }
+  p.steps {
+    font-size: 0.7em;
+  }
+  h1.cta {
+    font-size: 2rem;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  label.input-label {
+    position: relative;
+  }
+  .plan-container {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 120px);
+    grid-template-rows: 140px repeat(7, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "blank          mobile basic standard premium"
+      "monthly-price  one49  one99 four99   six49"
+      "line           line   line  line     line"
+      "video-quality  mGood  bGood better   best"
+      "line1           line1   line1  line1     line1"
+      "resolution     m480p   b480p 1080p   4KHDR"
+      "line2        line2   line2  line2     line2"
+      "ducutw         mPT    bptct sptct    pptct";
+  }
+  hr {
+    height: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border-width: 0;
+  }
+  hr#line {
+    grid-area: line / line;
+  }
+  hr#line1 {
+    grid-area: line1 / line1;
+  }
+  hr#line2 {
+    grid-area: line2 / line2;
+  }
+  .plan-container strong {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--grey);
+    place-self: center;
+  }
+  .plan-container p {
+    font-size: 16px;
+    color: var(--d-grey);
+  }
+  div.plan-page {
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  input.sq {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+  span.plan-name {
+    color: #ffffff;
+    font-weight: 800;
+  }
+  .dev-svg-cont {
+    color: var(--grey);
+  }
+  .dev-svg-label {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  input[type="radio"] {
+    appearance: none;
+    background-color: var(--light-red);
+    margin: 0;
+    position: relative;
+    font: inherit;
+    color: currentColor;
+    width: 120px;
+    height: 120px;
+    border-radius: 2px;
+  }
+  input[type="radio"]:checked {
+    background-color: var(--b-red);
+    filter: drop-shadow(0 0 2px var(--b-red));
+  }
+  input[type="radio"]:checked::before {
+    bottom: calc(0px - 10px);
+  }
+  .dev-svg {
+    text-align: center;
+  }
+  .dev-svg-cont {
+    padding-top: 16px;
+  }
+  .dev-svg-label {
+    margin-bottom: 7px;
+  }
+  div.plans {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    
+  }
+  .plan-grid {
+    margin: 0 16px 16px 16px;
+  }
+  p.monthly-price,
+  p.video-quality,
+  p.resolution,
+  p.devtowatch {
+    padding: 0 16px;
+  }
+  label {
+    position: absolute;
+    top: calc(50% - 5.545px);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1;
+  }
+  input::before {
+    --width: 20px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 20px;
+    background-color: inherit;
+    left: calc(50% - var(--width) * 1 / 2);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
+  .disclaimer small {
+    color: var(--grey);
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 32px;
+  }
+  button {
+    font-size: 24px;
+    background-color: var(--b-red);
+    padding: 0.75em 1em;
+    width: min(300px, 95%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 4rem;
+  }
+  .plans0 {
+    grid-area: 1 / 1 / 2 / 6;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+  }
+  .mobile-plan {
+    grid-area: mobile;
+  }
+  .basic-plan {
+    grid-area: basic;
+  }
+  .std-plan {
+    grid-area: standard;
+  }
+  .premium-plan {
+    grid-area: premium;
+  }
+  @media screen and (max-width: 950px) {
+    .plan-container {
+      grid-template-columns: 2fr repeat(4, 90px);
+      grid-template-rows: 110px repeat(7, auto);
+      column-gap: 20px;
+    }
+    input[type="radio"] {
+      width: 90px;
+      height: 90px;
+    }
+    label {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    .plans0 {
+      grid-area: mobile / mobile / mobile / premium-end;
+    }
+    .plan-container {
+      grid-template-areas:
+        "mobile basic standard premium"
+        "mon-price mon-price mon-price mon-price"
+        "one49  one99 four99   six49"
+        "line   line  line     line"
+        "vid-quality vid-quality vid-quality vid-quality"
+        "mGood       bGood       better      best"
+        "line1       line1       line1       line1"
+        "resolution resolution resolution resolution"
+        "m480p   b480p 1080p   4KHDR"
+        "line2   line2   line2  line2"
+        "ducutw ducutw ducutw ducutw"
+        "mPT    bptct sptct    pptct";
+  
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
+    }
+    p.monthly-price {
+      grid-area: mon-price / mon-price;
+      text-align: center;
+    }
+    p.video-quality {
+      grid-area: vid-quality / vid-quality;
+      text-align: center;
+    }
+    p.resolution {
+      grid-area: resolution / resolution;
+      text-align: center;
+    }
+    p.devtowatch {
+      grid-area: ducutw / ducutw;
+      text-align: center;
+    }
+    input[type="radio"] {
+      width: 100%;
+      height: 90px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .plan-container strong {
+      font-size: 12px;
+    }
+    .plan-container {
+      column-gap: 5px;
+    }
+  }

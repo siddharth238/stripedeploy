@@ -1,0 +1,38 @@
+ .Logintop{
+    height: 5rem;
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+ .Logintopimg{
+    width: 200px;
+ }
+ .Logintoptext{
+    color: gray;
+    font-size: large;
+    margin-top:1rem;
+
+ }
+ .Loginmiddle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+ }
+ .Loginmiddleheading{
+    margin-right: 25rem;
+ } .Loginmiddleheading2{
+    font-size: 100px;
+    color: #012169;
+ }
+ .formg{
+    display: flex;
+    align-items: center;
+ }
+ .formg>.MuiButton-root{
+     color: #012169;
+     padding: 0.5rem;
+     width: 10rem;
+     margin-left:2rem ;
+ }

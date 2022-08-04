@@ -1,0 +1,16 @@
+.cancelled{
+    display: flex;
+    align-items: center;
+margin-top: 4rem;
+padding: 2rem;
+}
+.cancelledcontentleft{
+    flex: 0.6;
+}
+.cancelledcontentright{
+    flex: 0.4;
+    
+}
+.cancelledcontentlefttext{
+    
+}
